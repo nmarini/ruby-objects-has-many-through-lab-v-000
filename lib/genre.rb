@@ -22,8 +22,4 @@ attr_accessor :name
   def artists
     songs.map{|song| song.artist}
   end
-
-
-
-
 end
