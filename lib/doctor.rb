@@ -18,4 +18,8 @@ attr_accessor :name, :appointments
   def appointments
     Appointments.all.select{|app| app.doctor == self}
   end
+
+  def patients
+    appointments.map{|app| app.patient}
+  end
 end
