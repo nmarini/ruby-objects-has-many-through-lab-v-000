@@ -20,6 +20,6 @@ attr_accessor :name
   end
 
   def doctors
-    appointments.map{|app| app.doctor} 
+    appointments.map{|app| app.doctor}
   end
 end
