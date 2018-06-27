@@ -15,8 +15,12 @@ attr_accessor :name, :all_songs
     @all_songs << Song.new(name, self, genre)
   end
 
-  def songs 
+  def songs
     Songs.all.select{|song| song.artist == self}
+  end
+
+  def genres 
+    songs.select{|song| song.genre}
   end
 
 
