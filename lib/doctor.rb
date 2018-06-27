@@ -23,5 +23,5 @@ attr_accessor :name, :appointments
     appointments.map{|app| app.patient}
   end
 
-  
+
 end
