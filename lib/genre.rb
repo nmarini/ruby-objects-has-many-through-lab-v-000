@@ -7,15 +7,19 @@ attr_accessor :name
     @@all << self
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
   def new_song(name, artist)
     Song.new(name. artist, self)
   end
 
-  
+  def songs
+    Songs.all.select{|song| song.genre}
+  end
+
+
 
 
 end
