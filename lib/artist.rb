@@ -11,5 +11,9 @@ attr_accessor :name, :all_songs
     @@all
   end
 
+  def new_song(name, genre)
+    @all_songs << Song.new(name, self, genre)
+  end
+    
 
 end
