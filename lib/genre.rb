@@ -20,7 +20,7 @@ attr_accessor :name
   end
 
   def artist
-    songs.select{|song| song.artist}
+    songs.map{|song| song.artist}
   end
 
 
