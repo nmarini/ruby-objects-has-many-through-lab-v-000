@@ -1,13 +1,13 @@
-class Patient 
-attr_accessor :name 
-@@all = [] 
+class Patient
+attr_accessor :name
+@@all = []
 
   def initialize(name)
-    @name = name 
-    @@all << self 
+    @name = name
+    @@all << self
   end
 
-  def sef.all 
-    @@all 
+  def self.all
+    @@all
   end
 end
