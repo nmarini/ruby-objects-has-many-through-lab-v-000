@@ -16,7 +16,7 @@ attr_accessor :name
   end
 
   def songs
-    Songs.all.select{|song| song.genre}
+    Song.all.select{|song| song.genre}
   end
 
   def artist
