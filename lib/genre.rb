@@ -20,7 +20,7 @@ attr_accessor :name
   end
 
   def artist
-    self.songs.map{|song| song.artist}
+    songs.map{|song| song.artists}
   end
 
 
