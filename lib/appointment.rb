@@ -12,4 +12,5 @@ attr_accessor :patient, :doctor, :date
   def self.all
     @@all
   end
+
 end
